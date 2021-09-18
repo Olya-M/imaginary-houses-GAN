@@ -1,2 +1,2 @@
-# imaginary-houses
+# imaginary-houses-GAN
  
