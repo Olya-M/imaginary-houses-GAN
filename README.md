@@ -22,7 +22,7 @@ This is an average batch of outputs from the model:
 ![Average batch](https://user-images.githubusercontent.com/68296887/133906728-17f2242a-839a-498e-96ff-40d5bb03ebcb.png)
 
 
-The houses don't generally end up looking entirely viable, but here are some select ones that I thought looked pretty neat:
+Here are some select ones that I thought looked pretty neat:
 
 * Epoch 4350
 
@@ -42,10 +42,10 @@ The houses don't generally end up looking entirely viable, but here are some sel
 
 ![10300_1](https://user-images.githubusercontent.com/68296887/133907411-f6420bd7-adf7-41e7-805e-19115a489a6c.png)
 
-![i0300_2](https://user-images.githubusercontent.com/68296887/133907432-cb15fc07-e1ab-41d6-86af-e2b3defd9ca5.png)
+![10300_2](https://user-images.githubusercontent.com/68296887/133907458-4116b9ca-472a-4d4f-880c-474433586ade.png)
 
-![10300_3](https://user-images.githubusercontent.com/68296887/133907458-4116b9ca-472a-4d4f-880c-474433586ade.png)
+![i0300_3](https://user-images.githubusercontent.com/68296887/133907432-cb15fc07-e1ab-41d6-86af-e2b3defd9ca5.png)
 
-![idk-32](https://user-images.githubusercontent.com/68296887/133907467-40d97ad8-c4ed-4b68-b121-698bc063b9af.png)
+![10300_4](https://user-images.githubusercontent.com/68296887/133907467-40d97ad8-c4ed-4b68-b121-698bc063b9af.png)
 
-![idk-33](https://user-images.githubusercontent.com/68296887/133907483-9723a411-4083-4bcf-82b0-170abe0686a4.png)
+![10300_5](https://user-images.githubusercontent.com/68296887/133907483-9723a411-4083-4bcf-82b0-170abe0686a4.png)
