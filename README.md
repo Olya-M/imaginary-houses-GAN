@@ -7,13 +7,13 @@ https://user-images.githubusercontent.com/68296887/133906699-251b9a60-7be8-4059-
 
  
 ## Training data:
-While I initially tried scraping images of fantasy houses from online, I found cleaning up the received images took up too much time. In the end, the dataset consists of 1028 manually collected images, primarily drawings, of fantasy or fantasy-like houses from subreddits like [r/imaginarydwellings]( https://old.reddit.com/r/ImaginaryDwellings/), [r/imaginaryarchitecture]( https://old.reddit.com/r/ImaginaryArchitecture/), [r/imaginarylibraries]( https://old.reddit.com/r/ImaginaryLibraries/), and google searches such as “fantasy cabin”, “fantasy tavern inn”, “flying house fantasy”. The data was collected in February of 2021. To make sure that houses don’t get cropped out during training, I manually cropped the images in the dataset so that houses are near the center of each image.
+After finding that cleaning webscraped images took too much time, I manually collected 1028 images, primarily drawings, of fantasy or fantasy-like houses from subreddits such as [r/imaginarydwellings]( https://old.reddit.com/r/ImaginaryDwellings/), [r/imaginaryarchitecture]( https://old.reddit.com/r/ImaginaryArchitecture/), [r/imaginarylibraries]( https://old.reddit.com/r/ImaginaryLibraries/), and Google searches such as “fantasy cabin”, “fantasy tavern inn”, “flying house fantasy”. The images were collected in February of 2021. To make sure that houses don’t get cropped out during training, I pre-processed the images so that houses are near the center of each image.
 
 A thousand images is a small dataset for a GAN, so the model was first pretrained for 30 epochs on a combined dataset of the imaginary houses images and ~12,500 images from a [Houses Prices and Images – SoCal dataset](https://www.kaggle.com/ted8080/house-prices-and-images-socal). Images of the inside of houses or images without clear single houses were removed.
 
 
 ## Training:
-The model is a convolutional general adversarial model (DCGAN) built with Pytorch. It uses [DiffAugment](https://github.com/mit-han-lab/data-efficient-gans) data augmentation, [Spectral normalization](https://github.com/christiancosgrove/pytorch-spectral-normalization-gan) for the discriminator, and an [AdaBelief](https://juntang-zhuang.github.io/adabelief/) optimizer. The training took about a week and a half with a laptop RTX 2060.
+The model is a convolutional general adversarial model (DCGAN) built with Pytorch. Some key points are that it uses [DiffAugment](https://github.com/mit-han-lab/data-efficient-gans) data augmentation, [Spectral normalization](https://github.com/christiancosgrove/pytorch-spectral-normalization-gan) for the discriminator, and an [AdaBelief](https://juntang-zhuang.github.io/adabelief/) optimizer. The training took about a week and a half with a laptop RTX 2060.
 
 ## Sample outputs:
 
