@@ -1,5 +1,5 @@
 # Imaginary Houses GAN
-This is a DCGAN Jupyter notebook for generating 512x512 imaginary fantasy houses. I worked on this to get more comfortable with Pytorch and GANs.
+This is a DCGAN Jupyter notebook for generating 512x512 imaginary fantasy houses that I worked on to get more comfortable with Pytorch and GANs.
 
 #### Moving through latent spaces:
 
