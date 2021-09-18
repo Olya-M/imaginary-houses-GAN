@@ -17,28 +17,28 @@ The model is a convolutional general adversarial model (DCGAN) built with Pytorc
 
 ## Sample outputs:
 
-This is an average batch of outputs from the model:
+##### An average batch of outputs from the model:
 
 ![Average batch](https://user-images.githubusercontent.com/68296887/133906728-17f2242a-839a-498e-96ff-40d5bb03ebcb.png)
 
 
-Here are some select ones that I thought looked pretty neat:
+##### Here are a few houses that I thought looked pretty neat:
 
-* Epoch 4350
+##### Epoch 4350:
 
 ![4350_1](https://user-images.githubusercontent.com/68296887/133907170-78d5fc62-2481-4ba6-94f2-e3c25ff16919.png)
 
 ![4350_2](https://user-images.githubusercontent.com/68296887/133907251-190ad90e-d823-4097-8d4e-cddefb37b005.png)
 
 
-* Epoch 8100
+##### Epoch 8100:
 
 ![8100_1](https://user-images.githubusercontent.com/68296887/133907285-178b655f-0421-436c-b57f-0034cf95a95d.png)
 
 ![8100_2](https://user-images.githubusercontent.com/68296887/133907299-052ebe67-882e-4e51-8889-b9d27b869eb9.png)
 
 
-* Epoch 10300
+##### Epoch 10300:
 
 ![10300_1](https://user-images.githubusercontent.com/68296887/133907411-f6420bd7-adf7-41e7-805e-19115a489a6c.png)
 
