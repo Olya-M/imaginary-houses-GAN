@@ -1,5 +1,5 @@
 # Imaginary Houses GAN
-This is a DCGAN Jupyter notebook for generating 512x512 imaginary fantasy houses that I worked on to get more comfortable with Pytorch and GANs.
+This is a DCGAN Jupyter notebook for generating 512x512 imaginary fantasy houses.
 
 #### Moving through latent spaces:
 
@@ -7,16 +7,13 @@ https://user-images.githubusercontent.com/68296887/133906699-251b9a60-7be8-4059-
 
  
 ## Training data:
-I collected 1028 images, primarily drawings, of fantasy or fantasy-like houses from subreddits such as [r/imaginarydwellings]( https://old.reddit.com/r/ImaginaryDwellings/), [r/imaginaryarchitecture]( https://old.reddit.com/r/ImaginaryArchitecture/), [r/imaginarylibraries]( https://old.reddit.com/r/ImaginaryLibraries/), and Google searches such as “fantasy cabin”, “fantasy tavern inn”, and “flying house fantasy”. I initially webscraped the images, but I found that removing duplicates and unclear images was taking up more time than manual data collection. I chose the images so that there was only one or two houses (or a combined housing unit) featured in the image. The images were collected in February of 2021. To make sure that houses don’t get cropped out during training, I pre-processed the images so that houses are near the center of each image. To assure data cleanliness, I also cropped out text and watermarks. 
+I collected 1028 images, primarily drawings, of fantasy or fantasy-like houses from subreddits such as [r/imaginarydwellings]( https://old.reddit.com/r/ImaginaryDwellings/), [r/imaginaryarchitecture]( https://old.reddit.com/r/ImaginaryArchitecture/), [r/imaginarylibraries]( https://old.reddit.com/r/ImaginaryLibraries/), and Google searches such as “fantasy cabin”, “fantasy tavern inn”, and “flying house fantasy”. The images were collected in February of 2021. I initially webscraped the images, but I found that removing duplicates and unclear images was taking up more time than manual data collection. I chose the images so that there was only one or two houses (or a combined housing unit) featured in the image. To make sure that houses didn't get cropped out during training, I pre-processed the images so that houses are near the center of each image. To assure data cleanliness, I also cropped out text and watermarks. 
 
-A thousand images is a very small dataset for a GAN, so the model was first pretrained for 30 epochs on a combined dataset of the imaginary houses images and ~12,500 images from a [Houses Prices and Images – SoCal dataset](https://www.kaggle.com/ted8080/house-prices-and-images-socal). Images of the inside of houses or images without clear single houses were removed.
+A thousand images is a very small dataset for a GAN, so I first pretrained the model for 30 epochs on a combined dataset of the imaginary houses images and ~12,500 images from a [Houses Prices and Images – SoCal dataset](https://www.kaggle.com/ted8080/house-prices-and-images-socal). I removed images of insides of homes as well as images without clear individual houses.
 
 
 ## Training:
-The model is a convolutional general adversarial model (DCGAN) built with Pytorch. Some key points are that it uses [DiffAugment](https://github.com/mit-han-lab/data-efficient-gans) data augmentation, [Spectral normalization](https://github.com/christiancosgrove/pytorch-spectral-normalization-gan) for the discriminator, and an [AdaBelief](https://juntang-zhuang.github.io/adabelief/) optimizer. The training took about a week and a half with a laptop RTX 2060.
-
-## Loss and Scores
-
+The model is a convolutional general adversarial model (DCGAN) built with Pytorch. Some key points are that it uses [DiffAugment](https://github.com/mit-han-lab/data-efficient-gans) data augmentation, [Spectral normalization](https://github.com/christiancosgrove/pytorch-spectral-normalization-gan) for the discriminator, and an [AdaBelief](https://juntang-zhuang.github.io/adabelief/) optimizer. I tried out a Wasserstein loss for generating 256x256 images but haven't found it to work well with the fantasy houses dataset. The training took about a week and a half with a laptop RTX 2060.
 
 ## Sample outputs:
 
