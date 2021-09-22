@@ -18,7 +18,7 @@ A thousand images is a small dataset for a GAN, so I first pretrained the model 
 
 
 ## Training:
-The model is a convolutional general adversarial model (DCGAN) built with Pytorch. Some key points are that it uses [DiffAugment](https://github.com/mit-han-lab/data-efficient-gans) data augmentation, [Spectral normalization](https://github.com/christiancosgrove/pytorch-spectral-normalization-gan) for the discriminator, and an [AdaBelief](https://juntang-zhuang.github.io/adabelief/) optimizer. I tried out a Wasserstein loss for generating 256x256 images but haven't found it to work well with the fantasy houses dataset. The training took about a week and a half with a laptop RTX 2060.
+The model is a convolutional general adversarial model (DCGAN) built with Pytorch. Some key points are that it uses [DiffAugment](https://github.com/mit-han-lab/data-efficient-gans) data augmentation, [Spectral normalization](https://github.com/christiancosgrove/pytorch-spectral-normalization-gan) for the discriminator, and an [AdaBelief](https://juntang-zhuang.github.io/adabelief/) optimizer. I tried out a Wasserstein loss for generating 256x256 images but haven't found it to work well with the fantasy houses dataset. The training took about a week and a half to two weeks with a laptop RTX 2060.
 
 ## Sample outputs:
 
