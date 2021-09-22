@@ -7,14 +7,14 @@ https://user-images.githubusercontent.com/68296887/133906699-251b9a60-7be8-4059-
 
  
 ## Training data:
-I collected 1028 images, primarily drawings, of fantasy or fantasy-like houses from subreddits such as [r/imaginarydwellings]( https://old.reddit.com/r/ImaginaryDwellings/), [r/imaginaryarchitecture]( https://old.reddit.com/r/ImaginaryArchitecture/), [r/imaginarylibraries]( https://old.reddit.com/r/ImaginaryLibraries/), and Google searches such as “fantasy cabin”, “fantasy tavern inn”, and “flying house fantasy”. The images were collected in February of 2021. I initially webscraped the images, but I found that removing duplicates and unclear images was taking up more time than manual data collection. I picked images that had only one or two housing "units" featured in the image. Multiple houses counted as a single unit as long as they were connected by something (e.g. multiple houses in one tree or on one bridge = one unit). To make sure that houses didn't get cropped out during training, I pre-processed the images so that houses are near the center of each image. To assure data cleanliness, I also cropped out text and watermarks. 
+I collected 1028 images, primarily drawings, of fantasy or fantasy-like houses from subreddits such as [r/imaginarydwellings]( https://old.reddit.com/r/ImaginaryDwellings/), [r/imaginaryarchitecture]( https://old.reddit.com/r/ImaginaryArchitecture/), [r/imaginarylibraries]( https://old.reddit.com/r/ImaginaryLibraries/), and Google searches such as “fantasy cabin”, “fantasy tavern inn”, and “flying house fantasy”. The images were collected in February of 2021. I initially webscraped the images but in the end found manual data collection more efficient for this dataset. I picked images that had only one or two housing "units" featured in the image. Multiple houses counted as a single unit as long as they were connected by something (e.g. multiple houses in one tree or on one bridge = one unit). To make sure that houses didn't get cropped out during training, I pre-processed the images so that houses are near the center of each image. To assure data cleanliness, I also cropped out text and watermarks. 
 
 An example of a training batch from the fantasy houses dataset:
 
 ![trainingeg](https://user-images.githubusercontent.com/68296887/134036968-7025eb68-cfca-432a-80f1-df3d18c3c741.png)
 
 
-A thousand images is a very small dataset for a GAN, so I first pretrained the model for 30 epochs on a combined dataset of the imaginary houses images and ~12,500 images from a [Houses Prices and Images – SoCal dataset](https://www.kaggle.com/ted8080/house-prices-and-images-socal). I removed images of insides of homes as well as images without clear individual houses.
+A thousand images is a small dataset for a GAN, so I first pretrained the model for 30 epochs on a combined dataset of the imaginary houses images and ~12,500 images from a [Houses Prices and Images – SoCal dataset](https://www.kaggle.com/ted8080/house-prices-and-images-socal). I removed images of insides of homes as well as images without clear individual houses.
 
 
 ## Training:
