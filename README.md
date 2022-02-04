@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/68296887/133906699-251b9a60-7be8-4059-
 ## Training data:
 I collected 1028 images, primarily drawings, of fantasy or fantasy-like houses from subreddits such as [r/imaginarydwellings]( https://old.reddit.com/r/ImaginaryDwellings/), [r/imaginaryarchitecture]( https://old.reddit.com/r/ImaginaryArchitecture/), [r/imaginarylibraries]( https://old.reddit.com/r/ImaginaryLibraries/), and Google searches such as “fantasy cabin”, “fantasy tavern inn”, and “flying house fantasy”. The images were collected in February of 2021. I initially webscraped the images but in the end found manual data collection more efficient for this dataset. I picked images that had only one or two housing "units" featured in the image. Multiple houses counted as a single unit as long as they were connected by something (e.g. multiple houses in one tree or on one bridge = one unit). To make sure that houses didn't get cropped out during training, I pre-processed the images so that houses are near the center of each image. To assure data cleanliness, I also cropped out text and watermarks. 
 
-An example of a training batch from the fantasy houses dataset:
+An example of a training batch from the [fantasy houses dataset](https://drive.google.com/file/d/1O3FCo4ey0LzpNbplpazqllK67OCGmcmk/view?usp=sharing):
 
 ![trainingeg](https://user-images.githubusercontent.com/68296887/134036968-7025eb68-cfca-432a-80f1-df3d18c3c741.png)
 
